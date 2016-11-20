@@ -1,0 +1,19 @@
+{
+  "batterie" : {
+    "tension": 10,
+    "courant": 10
+  },
+  "panneau" : {
+    "tension": 10,
+    "courant": 10
+  },
+  "teleInfo" : {
+    "BASE": 100,
+    "PAPP": 100,
+    "IINST": 100
+  },
+  "autre" : {
+    "authentification": "CODE SECRET",
+    "intensiteLumineuse": 100
+  }
+}

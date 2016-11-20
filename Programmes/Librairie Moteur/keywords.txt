@@ -1,0 +1,14 @@
+
+moteur	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+initialisation     KEYWORD2
+gauche             KEYWORD2
+droite             KEYWORD2
+stop               KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+

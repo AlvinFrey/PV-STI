@@ -1,0 +1,74 @@
+
+.parallax-container{height: 380px;}
+
+.light{text-align: center;}
+
+.icon-color{color: #16a085 !important;}
+
+.documentTile:hover{-webkit-filter: blur(2px) grayscale(0.1);}
+
+.systemDiagram:hover{-webkit-filter: blur(1px) grayscale(0.1);}
+
+b{color: #187d6a;}
+
+.nav-wrapper{
+
+    padding-left: 15px;
+    background-color: #16a085;
+
+}
+
+.btn-large.moreButton{
+
+    margin-top: 150px;
+    background-color: #16a085;
+
+}
+
+.documentTile{
+
+    width: 310px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 5px;
+
+}
+
+.systemDiagram{
+
+    width: 460px;
+    height: 260px;
+    margin-left: 5px;
+    display: inline-block;
+
+}
+
+.large{
+
+    width: 900px;
+
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .systemDiagram{
+
+        width: 280px;
+
+    }
+
+    .large{
+
+        width: 280px;
+
+    }
+
+    .documentTile{
+
+        width: 280px;
+
+
+    }
+
+}
