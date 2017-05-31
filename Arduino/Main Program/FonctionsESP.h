@@ -4,7 +4,7 @@
 /**
  * Cette fonction permet d'envoyer une commande AT sur l'ESP8266.
  * @param commande le message AT que l'on veut envoyer.
- */
+    */
 
 void ESPSend(String commande){
 
@@ -79,6 +79,6 @@ void JSONsend(String postData){
 	ESPReceive(2000);
 	ESPSend("AT+CIPCLOSE=4");
 	ESPReceive(2000);
-  Serial1.end();
+    Serial1.end();
 
 }

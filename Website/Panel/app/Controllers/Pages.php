@@ -20,9 +20,9 @@ class Pages extends Controller{
         $cache = new \Helpers\SimpleCache();
         $dataBDD = new \Models\PVData();
 
-        $sunriseSunset = json_decode($cache->get_data('soleil', 'http://api.sunrise-sunset.org/json?lat=48.0833&lng=7.3667&date=today&formatted=1'), TRUE);
-        $weather = json_decode($cache->get_data('meteo', 'http://www.prevision-meteo.ch/services/json/colmar'), TRUE);
-        $solarRadiationAPI = json_decode($cache->get_data('meteoblueSolaire', 'http://my.meteoblue.com/packages/solar-1h?apikey=APIKEY&lat=48.089827&lon=7.296011&asl=279&tz=Europe%2FParis&city=Ingersheim'), TRUE);
+        $sunriseSunset = json_decode($cache->get_data('soleil', 'http://api.sunrise-sunset.org/json?lat=LAT&lng=LONG&date=today&formatted=1'), TRUE);
+        $weather = json_decode($cache->get_data('meteo', 'http://www.prevision-meteo.ch/services/json/CITY'), TRUE);
+        $solarRadiationAPI = json_decode($cache->get_data('meteoblueSolaire', 'http://my.meteoblue.com/packages/solar-1h?apikey=APIKEY&lat=LAT&lon=LONG&asl=279&tz=Europe%2FParis&city=Ingersheim'), TRUE);
         $dateIndex = array_search(date('Y-m-d H:00', strtotime('+1 hour')), $solarRadiationAPI["data_1h"]["time"]);
 
         $data["vigilance"] = simplexml_load_string($cache->get_data('vigilance', 'http://vigilance.meteofrance.com/data/NXFR33_LFPW_.xml'));

@@ -127,10 +127,10 @@ void loop(){
 	ESPInit();
 
 	JSONsend("GET /api/dataParser?json="+String(bufferOk)+" HTTP/1.1\r\nHost: "+ String(PANEL_IP) +"\r\n\r\n");
-  ESPReceive(2000);
+    ESPReceive(2000);
 
-  delay(sleepTime);
+    delay(sleepTime);
 
-  jsonBuffer = StaticJsonBuffer<200>();
+    jsonBuffer = StaticJsonBuffer<200>();
 
 }

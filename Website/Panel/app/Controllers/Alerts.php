@@ -26,7 +26,7 @@ class Alerts extends Controller{
             $lastBatteryPercentage = $dataBDD->getLastDataByType("pourcentageBatterie");
             $dailyProduction = $dataBDD->getLastDataByType("productionJournee");
             $dailyConsumption = $dataBDD->getLastDataByType("consommationJournee");
-            $weather = json_decode($cache->get_data('meteo', 'http://www.prevision-meteo.ch/services/json/colmar'), TRUE);
+            $weather = json_decode($cache->get_data('meteo', 'http://www.prevision-meteo.ch/services/json/CITY0'), TRUE);
             $dailyWeather = $weather["fcst_day_0"]["condition"];
 
             if($lastBatteryPercentage[0]["value"]<="25"){

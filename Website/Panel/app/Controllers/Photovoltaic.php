@@ -22,7 +22,7 @@ class Photovoltaic extends Controller{
 
         date_default_timezone_set('Europe/Paris');
 
-        $solarRadiationAPI = json_decode($cache->get_data('meteoblueSolaire', 'http://my.meteoblue.com/packages/solar-1h?apikey=APIKEY&lat=48.089827&lon=7.296011&asl=279&tz=Europe%2FParis&city=Ingersheim'), TRUE);
+        $solarRadiationAPI = json_decode($cache->get_data('meteoblueSolaire', 'http://my.meteoblue.com/packages/solar-1h?apikey=APIKEY&lat=LAT&lon=LONG&asl=279&tz=Europe%2FParis&city=Ingersheim'), TRUE);
         $dateIndex = array_search(date('Y-m-d H:00'), $solarRadiationAPI["data_1h"]["time"]);
 
         $data['javascript'] = array('HighchartsJS/highcharts', 'HighchartsJS/modules/exporting', 'AjaxControllers/Photovoltaic/photovoltaic', 'SweetAlert/sweetalert.min');
