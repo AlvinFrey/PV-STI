@@ -30,5 +30,5 @@ This program is distributed under Creative Commons CC-BY-NC-SA-4.0 license, this
    [SimpleMVCFramework]: <https://novaframework.com/>
    [SweetAlert]: <https://limonte.github.io/sweetalert2/>
 
-   [Alvin FREY]: <https://twitter.com/Frey_Alvin>
+   [Alvin FREY]: <https://twitter.com/Frey_Alvin/>
    [Alban DURRHEIMER]: <https://www.linkedin.com/in/alban-durrheimer/>
