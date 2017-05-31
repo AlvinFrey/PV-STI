@@ -4,7 +4,7 @@
 
 ## License
 
-This program is distributed under Creative Commons CC-BY-NC-SA-4.0 license, this means that you can share and adapt the program but you can't use it for commercial purpose
+This program is distributed under Creative Commons CC-BY-NC-SA-4.0 license, this means that you can share and adapt the program but you can't use it for commercial purpose.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
